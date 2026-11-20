@@ -1,0 +1,32 @@
+<Window x:Class="LexiFrames.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lexi Frames"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        ShowActivated="False"
+        Focusable="False"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="Manual"
+        Left="8" Top="8">
+    <!-- Background is transparent by default; turned on from the Options window.
+         The counters are arranged in code (MainWindow.ApplyLayout) for each layout style. -->
+    <Border x:Name="Panel" Background="Transparent" CornerRadius="6" Padding="6,4,8,4" IsHitTestVisible="False">
+        <Grid x:Name="Counters">
+            <TextBlock x:Name="FpsLabel" Text="FPS"/>
+            <TextBlock x:Name="FpsText" Text="--" TextAlignment="Right"/>
+            <TextBlock x:Name="CpuLabel" Text="CPU"/>
+            <TextBlock x:Name="CpuLoadText" Text="--" TextAlignment="Right"/>
+            <TextBlock x:Name="CpuTempLabel" Text="CPU TEMP"/>
+            <TextBlock x:Name="CpuTempText" Text="--" TextAlignment="Right"/>
+            <TextBlock x:Name="GpuLabel" Text="GPU"/>
+            <TextBlock x:Name="GpuLoadText" Text="--" TextAlignment="Right"/>
+            <TextBlock x:Name="GpuTempLabel" Text="GPU TEMP"/>
+            <TextBlock x:Name="GpuTempText" Text="--" TextAlignment="Right"/>
+        </Grid>
+    </Border>
+</Window>
